@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Approach to (Glomerular) Proteinuria</title>
+  <style>
+    :root {
+      --blue: #0073e6;
+      --green: #009944;
+      --bg: #f4f8fc;
+      --dark: #333;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 20px;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      text-align: center;
+    }
+    h1 { color: var(--blue); margin-bottom: 1rem; }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .box {
+      background: #fff;
+      border-left: 6px solid var(--blue);
+      border-radius: 6px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    .box.green { border-left-color: var(--green); }
+    .box h2 { margin-top: 0; color: var(--blue); }
+    .box.green h2 { color: var(--green); }
+    .box ul { padding-left: 1.2rem; }
+    .subbox { display: flex; gap: 1rem; margin-top: 1rem; }
+    .subbox .box { flex: 1; border-left-width: 4px; }
+    .test {
+      display: inline-block;
+      margin: 0.25rem 0.5rem;
+      padding: 2px 6px;
+      background: #ffebeb;
+      border: 1px dashed #e60000;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+    .small-box {
+      max-width: 300px;
+      margin: 1rem auto;
+      border-left: 6px solid var(--blue);
+      border-radius: 6px;
+      padding: 1rem;
+      text-align: left;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Approach to (Glomerular) Proteinuria</h1>
+  <div class="container">
+
+    <!-- Nephritic Column -->
+    <div class="box">
+      <h2>Nephritic Syndrome</h2>
+      <h3>Pathophysiology & Clinical Features</h3>
+      <ul>
+        <li>Inflammation → glomerular damage → renal failure, protein loss, blood loss</li>
+        <li>Renal failure:
+          <ul>
+            <li>↑ BUN & Cr, oliguria</li>
+            <li>Hypertension & edema (↑ hydrostatic pressure)</li>
+          </ul>
+        </li>
+        <li>Proteinuria (&lt;3.5 g/day):
+          <ul>
+            <li>Hypertension & edema (↓ oncotic pressure)</li>
+          </ul>
+        </li>
+        <li>Blood loss:
+          <ul>
+            <li>Cola-colored urine (melena of GU tract)</li>
+            <li>Dysmorphic RBCs</li>
+            <li>RBC casts (pathognomonic)</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Diagnosis</h3>
+      <ul>
+        <li>Initial workup:
+          <ul>
+            <li>Thorough H&amp;P</li>
+            <li>Urinalysis (hematuria, proteinuria)</li>
+            <li>BMP (azotemia)</li>
+          </ul>
+        </li>
+        <li>Exclude nephrotic range:
+          <ul>
+            <li>24-h urine protein</li>
+            <li>Urine protein:creatinine ratio</li>
+          </ul>
+        </li>
+        <li>Narrow differential by complement status</li>
+        <li>Gold standard: kidney biopsy (EM, IF, LM)</li>
+      </ul>
+      <h3>Treatment</h3>
+      <ul>
+        <li>ACE/ARB</li>
+        <li>Immunosuppression</li>
+      </ul>
+
+      <h3>Nephritis Differential</h3>
+      <div class="subbox">
+        <div class="box">
+          <h3>Low Complement</h3>
+          <ul>
+            <li><strong>PSGN</strong>: immune complex; <strong>weeks</strong> post GAS,
+              <div class="test">ASO ↑</div><div class="test">anti-DNase B ↑</div><div class="test">C3 ↓</div>
+            </li>
+            <li><strong>MPGN</strong>: immune complex/complement dysregulation, LM: "tram track"
+              <div class="test">C3/C4 ↓</div><div class="test">C3 nephritic factor</div><div class="test">Cryoglobulins</div><div class="test">hep b/c</div>
+            </li>
+            <li><strong>Lupus Nephritis (DPGN)</strong>: immune complex deposition, IF: "full-house" (IgG, IgA, IgM, C3, C1q), LM: "wire-loop"
+              <div class="test">ANA ↑</div><div class="test">anti-dsDNA ↑</div><div class="test">anti-Smith ↑</div>
+            </li>
+            <li><strong>Cryoglobulinemic GN</strong>: immune complex; triad: palpable purpura, polyneuropathy, nephritis; MPGN overlap,
+              <div class="test">Cryoglobulins +</div><div class="test">C4 ↓</div><div class="test">HCV serology</div>
+            </li>
+          </ul>
+        </div>
+        <div class="box green">
+          <h3>Normal Complement</h3>
+          <ul>
+            <li><strong>IgA Nephropathy</strong>: IgA immune complex deposition; <strong>days</strong> post GI/URI (mucosal) infection, hsp = extrarenal manifestation
+              <div class="test">IgA ↑</div>
+            </li>
+            <li><strong>ANCA Vasculitis</strong>: pauci-immune GN; GPA, eGPA, MPA, IF: negative ("pauci immune")
+              <div class="test">c-ANCA/PR3</div><div class="test">p-ANCA/MPO</div>
+            </li>
+            <li><strong>Goodpasture (Anti-GBM)</strong>: hematuria & hemoptysis, IF:linear
+              <div class="test">anti-GBM Ab</div>
+            </li>
+            <li><strong>Alport Syndrome</strong>: type IV collagen defect; hematuria, sensorineural hearing loss, vision problems, tx: renal transplant, EM: "basket weave"
+              <div class="test">Genetic testing</div><div class="test">Audiometry</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nephrotic Column -->
+    <div class="box green">
+      <h2>Nephrotic Syndrome</h2>
+      <h3>Pathophysiology & Clinical Features</h3>
+      <ul>
+        <li>Glomerular damage → selective protein loss</li>
+        <li>Frothy urine (protein = surfactant)</li>
+        <li>Ankle/facial edema (albumin loss)</li>
+        <li>Hypertension (third spacing → ↓ renal flow → RAAS)</li>
+        <li>Hyperlipidemia (>300) → fatty casts/oval fat bodies</li>
+        <li>Hypercoagulability (ATIII loss)</li>
+        <li>Recurrent infections (IgG loss)</li>
+      </ul>
+      <h3>Diagnosis</h3>
+      <ul>
+        <li>Initial workup:
+          <ul>
+            <li>Urinalysis (proteinuria)* MM may have negative UA</li>
+            <li>Lipid panel</li>
+            <li>CMP (albumin)</li>
+          </ul>
+        </li>
+        <li>Confirmation:
+          <ul>
+            <li>24-h urine protein (>3.5 g/day)</li>
+            <li>Protein:Cr ratio (>3.5:1)</li>
+          </ul>
+        </li>
+        <li>Gold standard: kidney biopsy (EM, IF, LM)</li>
+      </ul>
+      <h3>Treatment</h3>
+      <ul>
+        <li>Statin</li>
+        <li>ACE/ARB</li>
+        <li>Sodium restriction</li>
+      </ul>
+
+      <h3>Nephrosis Differential</h3>
+      <ul>
+        <li><strong>Minimal Change Disease</strong>: cytokine-mediated podocyte damage (effacement); children, post URI, Hodgkins; steroid responsive
+          <div class="test">PCR 20</div>
+        </li>
+        <li><strong>FSGS</strong>: cytokine-mediated podocyte damage (effacement); primary - mysterious inflammation; secondary: HIV, heroin, obesity, solitary kidney; steroid unresponsive, tx: risk factor modification, poor prognosis
+          <div class="test">HIV testing</div><div class="test">UDS</div>
+        </li>
+        <li><strong>Membranous Nephropathy</strong>: immune complex; IC deposition -> GBM thickening; lupus, solid tumors, Hep B/C, RA drugs; EM: subepithelial deposits "spike and dome"
+          <div class="test">anti-PLA2R</div><div class="test">Hep B/C</div><div class="test">low C3</div><div class="test">ANA ↑</div><div class="test">anti-dsDNA ↑</div><div class="test">anti-Smith ↑</div><div class="test">PET</div>
+        </li>
+        <li><strong>Diabetic Nephropathy</strong>: toxin mediated (non-enzymatic glycation); GBM thickening;
+          <div class="test">HbA1c</div><div class="test">Albumin/Cr ratio</div>
+        </li>
+        <li><strong>Systemic Amyloidosis</strong>: toxin mediated ;AL (MM), AA (chronic inflammation), (kidney & heart most common) 
+          <div class="test">SPEP/UPEP</div><div class="test">Congo red</div><div class="test">Fat pad biopsy</div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- RPGN Box -->
+  <div class="small-box">
+    <h3>RPGN (Crescentic)</h3>
+    <ul>
+      <li>Rapid ESRD in months if untreated</li>
+      <li>Presents with AKI, anorexia / fatigue, nephritis</li>
+      <li>Type I: linear (Goodpasture)</li>
+      <li>Type II: granular (PSGN, lupus nephritis)</li>
+      <li>Type III: pauci-immune (ANCA)</li>
+    </ul>
+    <p>Treatment: steroids & cyclophosphamide</p>
+  </div>
+
+  <!-- Histopath Derivation -->
+  <div class="small-box">
+    <h3>Histopath Derivation</h3>
+    <ul>
+      <li>“Membranous”: EM: subepithelial deposits; LM: basement membrane thickening</li>
+      <li>“Proliferative”: LM: mesangial hypercellularity;</li>
+      <li>Pathophys = immune complex: IF: granular, lumpy bumpy</li>
+      <li>RPGN: LM: crescents</li>
+    </ul>
+  </div>
+
+</body>
+</html>
+
