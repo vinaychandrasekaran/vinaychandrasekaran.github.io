@@ -21,7 +21,21 @@
     h1 { color: var(--blue); margin-bottom: 1rem; }
     .container {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 2fr 1fr;
+      gap: 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .container2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .container3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 1rem;
       max-width: 1200px;
       margin: auto;
@@ -33,6 +47,7 @@
       padding: 1rem;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       text-align: left;
+      max-width: 1200px;
     }
     .box.green { border-left-color: var(--green); }
     .box h2 { margin-top: 0; color: var(--blue); }
@@ -45,6 +60,60 @@
       margin: 0.25rem 0.5rem;
       padding: 2px 6px;
       background: #ffebeb;
+      border: 1px dashed #e60000;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+    .pathophys {
+      display: inline-block;
+      margin: 0.25rem 0.5rem;
+      padding: 2px 6px;
+      background: #ADD8E6;
+      border: 1px dashed #e60000;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+    .pathophysy {
+      display: inline-block;
+      margin: 0.25rem 0.5rem;
+      padding: 2px 6px;
+      background: #98f03a;
+      border: 1px dashed #e60000;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+    .pathophyso {
+      display: inline-block;
+      margin: 0.25rem 0.5rem;
+      padding: 2px 6px;
+      background: #c6cacf;
+      border: 1px dashed #e60000;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+    .pathophysr {
+      display: inline-block;
+      margin: 0.25rem 0.5rem;
+      padding: 2px 6px;
+      background: #f27966;
+      border: 1px dashed #e60000;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+    .pathophysyy {
+      display: inline-block;
+      margin: 0.25rem 0.5rem;
+      padding: 2px 6px;
+      background: #abf5ca;
+      border: 1px dashed #e60000;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+    .pathophysp {
+      display: inline-block;
+      margin: 0.25rem 0.5rem;
+      padding: 2px 6px;
+      background: #d97df5;
       border: 1px dashed #e60000;
       border-radius: 4px;
       font-size: 0.85em;
@@ -62,6 +131,8 @@
 </head>
 <body>
   <h1>Approach to (Glomerular) Proteinuria</h1>
+  
+
   <div class="container">
 
     <!-- Nephritic Column -->
@@ -109,8 +180,8 @@
       </ul>
       <h3>Treatment</h3>
       <ul>
-        <li>ACE/ARB</li>
-        <li>Immunosuppression</li>
+        <li>ACE/ARB (symptomatic mgmt for htn)</li>
+        <li>Immunosuppression Cornerstone (Except Alport, genetic --> kidney transplant)</li>
       </ul>
 
       <h3>Nephritis Differential</h3>
@@ -118,16 +189,25 @@
         <div class="box">
           <h3>Low Complement</h3>
           <ul>
-            <li><strong>PSGN</strong>: immune complex; <strong>weeks</strong> post GAS,
+            <li><strong>PSGN</strong>:
+              nephritis <strong>weeks</strong> post GAS infxn (e.g. impetigo, strep throat); easily confused with IgA nephritis (occurs days URI)
+              <div class="pathophys">immune complex</div>
               <div class="test">ASO ↑</div><div class="test">anti-DNase B ↑</div><div class="test">C3 ↓</div>
             </li>
-            <li><strong>MPGN</strong>: immune complex/complement dysregulation, LM: "tram track"
+            <li><strong>MPGN</strong>:
+              type 1 a/w hep b / c, cryoglobulins. type 2 (dense deposit disease) a/w C3 nephritic factor (stabilizes alternative pathway), 
+              LM: "tram-track"
+              <div class="pathophys">type 1: immune complex</div><div class="pathophyso">type2: complement dysreg</div>
               <div class="test">C3/C4 ↓</div><div class="test">C3 nephritic factor</div><div class="test">Cryoglobulins</div><div class="test">hep b/c</div>
             </li>
-            <li><strong>Lupus Nephritis (DPGN)</strong>: immune complex deposition, IF: "full-house" (IgG, IgA, IgM, C3, C1q), LM: "wire-loop"
+            <li><strong>Lupus Nephritis (DPGN)</strong>:
+              a/w lupus; IF: "full-house" (IgG, IgA, IgM, C3, C1q), LM: "wire-loop"
+              <div class="pathophys">immune complex</div>
               <div class="test">ANA ↑</div><div class="test">anti-dsDNA ↑</div><div class="test">anti-Smith ↑</div>
             </li>
-            <li><strong>Cryoglobulinemic GN</strong>: immune complex; triad: palpable purpura, polyneuropathy, nephritis; MPGN overlap,
+            <li><strong>Cryoglobulinemic GN</strong>: 
+              triad: palpable purpura, polyneuropathy, nephritis; MPGN overlap
+              <div class="pathophys">immune complex</div>
               <div class="test">Cryoglobulins +</div><div class="test">C4 ↓</div><div class="test">HCV serology</div>
             </li>
           </ul>
@@ -135,16 +215,24 @@
         <div class="box green">
           <h3>Normal Complement</h3>
           <ul>
-            <li><strong>IgA Nephropathy</strong>: IgA immune complex deposition; <strong>days</strong> post GI/URI (mucosal) infection, hsp = extrarenal manifestation
+            <li><strong>IgA Nephropathy</strong>: 
+              nephritis <strong>days</strong> post GI/URI (mucosal) infection, hsp = extrarenal manifestation, IgA IC do not activate complement
+              <div class="pathophys">immune complex</div>
               <div class="test">IgA ↑</div>
             </li>
-            <li><strong>ANCA Vasculitis</strong>: pauci-immune GN; GPA, eGPA, MPA, IF: negative ("pauci immune")
+            <li><strong>ANCA GN</strong>: 
+              GPA, eGPA, MPA; IF: negative ("pauci immune" GN)
+              <div class="pathophysr">vasculitis</div>
               <div class="test">c-ANCA/PR3</div><div class="test">p-ANCA/MPO</div>
             </li>
-            <li><strong>Goodpasture (Anti-GBM)</strong>: hematuria & hemoptysis, IF:linear
+            <li><strong>Goodpasture</strong>: 
+              hematuria & hemoptysis; IF:linear
+              <div class="pathophysy">gbm</div>
               <div class="test">anti-GBM Ab</div>
             </li>
-            <li><strong>Alport Syndrome</strong>: type IV collagen defect; hematuria, sensorineural hearing loss, vision problems, tx: renal transplant, EM: "basket weave"
+            <li><strong>Alport Syndrome</strong>: 
+              type IV collagen defect; triad: hematuria, sensorineural hearing loss, vision problems; tx: renal transplant; EM: "basket weave"
+              <div class="pathophysy">gbm</div>
               <div class="test">Genetic testing</div><div class="test">Audiometry</div>
             </li>
           </ul>
@@ -184,26 +272,36 @@
       </ul>
       <h3>Treatment</h3>
       <ul>
-        <li>Statin</li>
-        <li>ACE/ARB</li>
-        <li>Sodium restriction</li>
+        <li>Statin (hyperlipidemia)</li>
+        <li>ACE/ARB (hypertension)</li>
+        <li>Sodium restriction (edema)</li>
+        <li>Management varies between diseases</li>
       </ul>
 
       <h3>Nephrosis Differential</h3>
       <ul>
-        <li><strong>Minimal Change Disease</strong>: cytokine-mediated podocyte damage (effacement); children, post URI, Hodgkins; steroid responsive
-          <div class="test">PCR 20</div>
+        <li><strong>Minimal Change Disease</strong>: 
+          cytokine-mediated podocyte damage (effacement); children, post URI, Hodgkins; steroid responsive
+          <div class="pathophysyy">cytokines</div>
         </li>
-        <li><strong>FSGS</strong>: cytokine-mediated podocyte damage (effacement); primary - mysterious inflammation; secondary: HIV, heroin, obesity, solitary kidney; steroid unresponsive, tx: risk factor modification, poor prognosis
+        <li><strong>FSGS</strong>: 
+          cytokine-mediated podocyte damage (effacement); primary - mysterious inflammation; secondary: HIV, heroin, obesity, solitary kidney; steroid unresponsive, tx: risk factor modification, poor prognosis
+          <div class="pathophysyy">cytokines</div>
           <div class="test">HIV testing</div><div class="test">UDS</div>
         </li>
-        <li><strong>Membranous Nephropathy</strong>: immune complex; IC deposition -> GBM thickening; lupus, solid tumors, Hep B/C, RA drugs; EM: subepithelial deposits "spike and dome"
+        <li><strong>Membranous Nephropathy</strong>: 
+          IC deposition -> GBM thickening; lupus, solid tumors, Hep B/C, RA drugs; EM: subepithelial deposits "spike and dome"
+          <div class="pathophys">immune complex</div>
           <div class="test">anti-PLA2R</div><div class="test">Hep B/C</div><div class="test">low C3</div><div class="test">ANA ↑</div><div class="test">anti-dsDNA ↑</div><div class="test">anti-Smith ↑</div><div class="test">PET</div>
         </li>
-        <li><strong>Diabetic Nephropathy</strong>: toxin mediated (non-enzymatic glycation); GBM thickening;
+        <li><strong>Diabetic Nephropathy</strong>: 
+          non-enzymatic glycation, GBM thickening
+          <div class="pathophysp">toxin-mediated</div>
           <div class="test">HbA1c</div><div class="test">Albumin/Cr ratio</div>
         </li>
-        <li><strong>Systemic Amyloidosis</strong>: toxin mediated ;AL (MM), AA (chronic inflammation), (kidney & heart most common) 
+        <li><strong>Systemic Amyloidosis</strong>: 
+          AL (Multiple Myeloma / plasma cell dyscrasia), AA (chronic inflammation e.g. FMF, RA) (kidney & heart (restrictive cardiomyopathy) most commonly affected organs) 
+          <div class="pathophysp">toxin-mediated</div>
           <div class="test">SPEP/UPEP</div><div class="test">Congo red</div><div class="test">Fat pad biopsy</div>
         </li>
       </ul>
@@ -211,29 +309,152 @@
 
   </div>
 
-  <!-- RPGN Box -->
-  <div class="small-box">
-    <h3>RPGN (Crescentic)</h3>
-    <ul>
-      <li>Rapid ESRD in months if untreated</li>
-      <li>Presents with AKI, anorexia / fatigue, nephritis</li>
-      <li>Type I: linear (Goodpasture)</li>
-      <li>Type II: granular (PSGN, lupus nephritis)</li>
-      <li>Type III: pauci-immune (ANCA)</li>
-    </ul>
-    <p>Treatment: steroids & cyclophosphamide</p>
+  <div class="container2">
+    <!-- Key -->
+    <div class="box">
+        <h3>Key</h3>
+        <p><strong>Pathophys</strong> is color coded</p>
+        <div class="pathophys">immune complex</div> - most important. glomerular damage due to type III hypersensitivity reaction.
+          <div style="padding-left: 2em;">
+            --> immunologic insult (e.g. autoimmune, infection) → Ab response → IC formation → glomerular deposition (somewhat random, uneven, therefore IF = "lumpy bumpy" or "granular") → complement activation → glomerular damage
+          </div>
+        <div class="pathophysy">gbm</div> - glomerular basemement membrane problem. Alport's is genetic, Goodpasture's is Ab mediated<br>
+        <div class="pathophyso">toxin-mediated</div> - circulating toxins damage glomerulus<br>
+        <div class="pathophysr">vasculitis</div> - small vessel vasculitis damages glomeruli<br>
+        <div class="pathophysyy">cytokines</div> - cytokines damage glomeruli (particularly podocyte foot processes), immune response here is notably Ab independent<br>
+        <div class="pathophysp">toxin-mediated</div> - amyloid and sugar (in high concentrations) damage glomerulus<br>
+        <p><strong>Tests</strong> to consider are green </p>
+        <div class="test">think about ordering these tests</div>
+    </div>
   </div>
 
-  <!-- Histopath Derivation -->
-  <div class="small-box">
-    <h3>Histopath Derivation</h3>
-    <ul>
-      <li>“Membranous”: EM: subepithelial deposits; LM: basement membrane thickening</li>
-      <li>“Proliferative”: LM: mesangial hypercellularity;</li>
-      <li>Pathophys = immune complex: IF: granular, lumpy bumpy</li>
-      <li>RPGN: LM: crescents</li>
-    </ul>
+  <div class="container3">
+    <!-- RPGN Box -->
+    <div class="box">
+      <h3>RPGN (Crescentic), Separate Clinical Syndrome</h3>
+      <ul>
+        <li>Leads to ESRD in months if untreated</li>
+        <li>Patients are sick on presentation (AKI, anorexia, fatigue, nephritis)</li>
+        <li>Four etiologies below</li>
+        <li>Type I: linear (Goodpasture)</li>
+        <li>Type II: granular (PSGN, lupus nephritis)</li>
+        <li>Type III: pauci-immune (ANCA)</li>
+      </ul>
+      <p>LM: crescents in bowman's space (hallmark of RPGN)</p>
+      <p>Note: PSGN and lupus nephritis rarely progress to RPGN. therefore crescents are commonly absent on LM</p>
+      <p>Note: goodpasture and ANCA GN commonly present as RPGN. therefore crescents are commonly present on LM. indolent or subacute disease courses are rare</p>
+      <p>Treatment: steroids & cyclophosphamide</p>
+    </div>
+
+    <!-- Histopath Derivation -->
+    <div class="box">
+      <h3>Histopath Derivation</h3>
+      <ul>
+        <li>“Membranous”: EM: subepithelial deposits; LM: basement membrane thickening</li>
+        <li>“Proliferative”: LM: mesangial hypercellularity;</li>
+        <li>if pathophys = immune complex --> IF: granular, lumpy bumpy</li>
+      </ul>
+    </div>
+
+    <!-- Buzzword Compilation -->
+    <div class="box green">
+      <h3>Buzzword Compilation</h3>
+      <ul>
+        <li>RPGN - "crescentic"</li>
+        <li>MPGN - "tram track"</li>
+        <li>DPGN - "wire-loop", "full house"</li>
+        <li>ANCA - "pauci-immune"</li>
+        <li>Alport - "basket-weave"</li>
+        <li>Membranous - "spike and dome"</li>
+        <li>Amyloid - "apple-green birefringence"</li>
+      </ul>
+    </div>
   </div>
+
+  <div class="container2">
+    <div class="box">
+      <h3><strong>DO NOT MEMORIZE THIS SHIT, WASTE OF TIME, HERE FOR FUN</strong></h3>
+      <table style="width:100%; border-collapse: collapse; text-align: left; font-size: 0.95em;">
+        <thead style="background-color: #f0f0f0;">
+          <tr>
+            <th style="padding: 8px; border-bottom: 1px solid #ccc;">Disease</th>
+            <th style="padding: 8px; border-bottom: 1px solid #ccc;">EM</th>
+            <th style="padding: 8px; border-bottom: 1px solid #ccc;">IF</th>
+            <th style="padding: 8px; border-bottom: 1px solid #ccc;">LM</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 8px;">PSGN</td>
+            <td style="padding: 8px;">Subepithelial humps</td>
+            <td style="padding: 8px;">Granular ("lumpy bumpy")</td>
+            <td style="padding: 8px;">Hypercellular glomeruli, neutrophils, (if progresses to RPGN, will show crescents in bowman's space)</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">Lupus Nephritis (DPGN)</td>
+            <td style="padding: 8px;">Subendothelial ± mesangial deposits</td>
+            <td style="padding: 8px;">"Full house" (IgG, IgA, IgM, C3, C1q)</td>
+            <td style="padding: 8px;">Wire-loop lesions, diffuse hypercellularity, (if progresses to RPGN, will show crescents in bowman's space)</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">MPGN</td>
+            <td style="padding: 8px;">Type I: Subendothelial, Type II: Dense deposits</td>
+            <td style="padding: 8px;">Granular (Type I), C3 only (Type II)</td>
+            <td style="padding: 8px;">Mesangial hypercellularity, GBM splitting ("tram-track")</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">Goodpasture</td>
+            <td style="padding: 8px;">No immune deposits</td>
+            <td style="padding: 8px;">Linear IgG along GBM</td>
+            <td style="padding: 8px;">Crescentic GN</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">ANCA Vasculitis (e.g., GPA, MPA)</td>
+            <td style="padding: 8px;">No immune deposits</td>
+            <td style="padding: 8px;">Negative (pauci-immune)</td>
+            <td style="padding: 8px;">Crescentic GN, necrosis</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">IgA Nephropathy</td>
+            <td style="padding: 8px;">Mesangial deposits</td>
+            <td style="padding: 8px;">IgA in mesangium</td>
+            <td style="padding: 8px;">Mesangial proliferation</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">Alport Syndrome</td>
+            <td style="padding: 8px;">Irregular thickening/thinning, basket-weave appearance</td>
+            <td style="padding: 8px;">Negative</td>
+            <td style="padding: 8px;">Variable, often nonspecific</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">Membranous Nephropathy</td>
+            <td style="padding: 8px;">Subepithelial deposits ("spike & dome")</td>
+            <td style="padding: 8px;">Granular IgG and C3</td>
+            <td style="padding: 8px;">Diffuse GBM thickening, no hypercellularity</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">Minimal Change Disease</td>
+            <td style="padding: 8px;">Effacement of foot processes</td>
+            <td style="padding: 8px;">Negative</td>
+            <td style="padding: 8px;">Normal glomeruli</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">FSGS</td>
+            <td style="padding: 8px;">Foot process effacement (segmental)</td>
+            <td style="padding: 8px;">Negative or nonspecific</td>
+            <td style="padding: 8px;">Segmental sclerosis, focal distribution</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">Amyloidosis</td>
+            <td style="padding: 8px;">Non-branching fibrils (10 nm)</td>
+            <td style="padding: 8px;">Apple-green birefringence with Congo red</td>
+            <td style="padding: 8px;">Amorphous hyaline material in mesangium</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
 
 </body>
 </html>
